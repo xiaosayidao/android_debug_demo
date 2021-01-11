@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="anr_type_array">
+        <item>@string/content_provider_anr</item>
+        <item>@string/start_service_timeout</item>
+        <item>@string/bind_service_timeout</item>
+        <item>@string/bg_service_timeout</item>
+        <item>@string/fg_service_timeout</item>
+        <item>@string/bg_broadcast_timeout</item>
+        <item>@string/fg_broadcast_timeout</item>
+        <item>@string/input_dispatch_timeout</item>
+        <item>@string/io_operate</item>
+        <item>@string/blocked_lock</item>
+        <item>@string/binder_blocked</item>
+    </array>
+    <array name="anr_type_summary">
+        <item>@string/content_provider_anr_summary</item>
+        <item>@string/start_service_timeout_summary</item>
+        <item>@string/bind_service_timeout_summary</item>
+        <item>@string/bg_service_timeout_summary</item>
+        <item>@string/fg_service_timeout_summary</item>
+        <item>@string/bg_broadcast_timeout_summary</item>
+        <item>@string/fg_broadcast_timeout_summary</item>
+        <item>@string/input_dispatch_timeout_summary</item>
+        <item>@string/io_operate_summary</item>
+        <item>@string/blocked_lock_summary</item>
+        <item>@string/binder_blocked_summary</item>
+
+    </array>
+    <array name="input_dispatch_timeout_summary">
+        <item>@string/input_dispatch_window_paused_summary</item>
+        <item>@string/window_not_focused_application_focused_summary</item>
+        <item>@string/input_channel_not_registered_summary</item>
+        <item>@string/input_channel_dead_summary</item>
+        <item>@string/input_channel_full_summary</item>
+        <item>@string/input_dispatch_touch_event_summary</item>
+        <item>@string/input_dispatch_key_event_summary</item>
+    </array>
+    <array name="input_dispatch_timeout_title_array">
+        <item>@string/input_dispatch_window_paused</item>
+        <item>@string/window_not_focused_application_focused</item>
+        <item>@string/input_channel_not_registered</item>
+        <item>@string/input_channel_dead</item>
+        <item>@string/input_channel_full</item>
+        <item>@string/input_dispatch_touch_event</item>
+        <item>@string/input_dispatch_key_event</item>
+    </array>
+
+
+    <string name="binder_blocked">binder blocked</string>
+    <string name="binder_blocked_summary">1. make System_server blocked
+        ActivityManager#getAppTasks 2. click this item</string>
+    <string-array name="debug_type_summary">
+        <item>@string/type_crash_summary</item>
+        <item>@string/type_anr_summary</item>
+        <item>@string/type_watchdog_summary</item>
+    </string-array>
+    <string-array name="debug_type">
+        <item>@string/type_crash</item>
+        <item>@string/type_anr</item>
+        <item>@string/type_watchdog</item>
+    </string-array>
+</resources>
