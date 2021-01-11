@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.xiaosayidao.debugdemo.MainFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_base">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_AnrFragment"
+            app:destination="@id/AnrFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_CrashFragment"
+            app:destination="@id/CrashFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AnrFragment"
+        android:name="com.xiaosayidao.debugdemo.anr.AnrFragment"
+        android:label="@string/second_fragment_label">
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/CrashFragment"
+        android:name="com.xiaosayidao.debugdemo.CrashFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_crash">
+        <action
+            android:id="@+id/action_CrashFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+</navigation>

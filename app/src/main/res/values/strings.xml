@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">DebugDemo</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="type_anr">ANR</string>
+    <string name="type_crash">Crash</string>
+    <string name="type_watchdog">Watchdog</string>
+    <string name="type_crash_summary">Show common crash types</string>
+    <string name="type_anr_summary">Show common anr types</string>
+    <string name="type_watchdog_summary">Show common watchdog types</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bg_broadcast_timeout">background broadcast timeout(60s)</string>
+    <string name="bg_broadcast_timeout_summary">1. click this item</string>
+    <string name="bg_service_timeout">background service timeout(200s)</string>
+    <string name="bg_service_timeout_summary">1.click this item. 2. adb root;adb shell am kill com.demo.anrdemo</string>
+    <string name="bind_service_timeout">bind service timeout(20s)</string>
+    <string name="bind_service_timeout_summary">1. click this item</string>
+    <string name="content_provider_anr">content provider timeout(custom)</string>
+    <string name="content_provider_anr_summary">1. signature with platform key. 2. click this item</string>
+    <string name="fg_broadcast_timeout">foreground broadcast timeout(10s)</string>
+    <string name="fg_broadcast_timeout_summary">1.click this item</string>
+    <string name="fg_service_timeout">foreground service timeout(5s)</string>
+    <string name="fg_service_timeout_summary">1. click this item.</string>
+    <string name="input_channel_dead">Waiting because the %s window\'s input connection is %s.\" \"The window may be in the process of being removed.\"</string>
+    <string name="input_channel_dead_summary">pipe line broken. maybe framework has long operation</string>
+    <string name="input_channel_full">Waiting because the %s window\'s input channel is full. Outbound queue length: %d. Wait queue length: %d.Waiting to send key event because the %s window has not finished processing all of the input events that were previously delivered to it. Outbound queue length: %d. Wait queue length: %d.\",</string>
+    <string name="input_channel_full_summary">pipe line broken. maybe framework has long operation</string>
+    <string name="input_channel_not_registered">Waiting because the %s window\'s input channel is not registered with the input dispatcher. The window may be in the process of being removed.</string>
+    <string name="input_channel_not_registered_summary">It may be that the framework layer is time-consuming and difficult to simulate through the app</string>
+    <string name="input_dispatch_key_event">Reason: Input dispatching timed out (Waiting to send key event because the focused window has not finished processing all of the input events that were previously delivered to it. Outbound queue length: 0. Wait queue length: 1.)</string>
+    <string name="input_dispatch_key_event_summary">1. click this item. 2. press back key 3 times</string>
+    <string name="input_dispatch_timeout">input dispatch timeout.(5s)</string>
+    <string name="input_dispatch_timeout_summary">click this item to start new activity.</string>
+    <string name="input_dispatch_touch_event">Reason: Input dispatching timed out (Waiting to send non-key event because the touched window has not finished processing certain input events that were delivered to it over 500.0ms ago.  Wait queue length: 1.  Wait queue head age: 6304.8ms.,</string>
+    <string name="input_dispatch_touch_event_summary">1. click this item. 2. then touch screen from bottom to up.</string>
+    <string name="input_dispatch_window_paused">Waiting because the %s window is paused.</string>
+    <string name="input_dispatch_window_paused_summary">It may be that the framework layer is time-consuming and difficult to simulate through the app</string>
+    <string name="search_menu_title">Search</string>
+    <string name="start_service_timeout">start service timeout(20s)</string>
+    <string name="start_service_timeout_summary">1. click this item</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="window_not_focused_application_focused">Reason: Input dispatching timed out (Waiting because no window has focus but there is a focused application that may eventually add a window when it finishes starting up.)</string>
+    <string name="window_not_focused_application_focused_summary">1. click this item. 2. press back key 2 times;</string>
+    <string name="lock_dev">a synchronized block for a long operation that is happening on another thread.</string>
+    <string name="io_operate">io wait high</string>
+    <string name="io_operate_summary">press this item multi times</string>
+    <string name="blocked_lock">Lock contention</string>
+    <string name="blocked_lock_summary">1. click this item</string>
+</resources>
